@@ -1,0 +1,13 @@
+CREATE TABLE ElementDimensionMappingMaster (
+ Created_By_Fk NUMBER(10) NOT NULL,
+ Created_On NUMBER(10) NOT NULL,
+ Element_Dimensions varchar2(50) NOT NULL,
+ Element_Dimensions_Id NUMBER(10) PRIMARY KEY,
+ Element_Id_Fk NUMBER(10) NOT NULL,
+ Is_Active NUMBER(10) NOT NULL,
+ Is_Pending NUMBER(10) NOT NULL,
+ Last_Approved_By_Fk varchar2(50),
+ Last_Approved_On NUMBER(10),
+ Last_Modified_By_Fk NUMBER(10),
+ Last_Modified_On NUMBER(10),
+ Last_Updated_On NUMBER(10) NOT NULL);

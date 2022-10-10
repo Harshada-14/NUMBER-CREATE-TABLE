@@ -1,0 +1,19 @@
+
+CREATE TABLE ElementMaster ( 
+  Element_Id NUMBER(10) NOT NULL,  
+  Dsd_Code varchar2(50) PRIMARY KEY,  
+  Element_Lable varchar2(50), 
+  Element_Version NUMBER(10) NOT NULL,
+  Classification_Id Fk NUMBER(10) NOT NULL,
+  Dependency_Type_Id_Fk NUMBER(10) NOT NULL,
+  Flow_Type_Id_Fk NUMBER(10) NOT NULL,
+  Nature_Id_Fk NUMBER(10) NOT NULL,
+  Sector_Id_Fk NUMBER(10),
+  Usage_Id_Fk NUMBER(10) NOT NULL,
+  Frequency_Id_Fk NUMBER(10) NOT NULL,
+  Parent_Element_Id_Fk NUMBER(10) NOT NULL,
+  Is_Active NUMBER(10) NOT NULL,
+  Regulator_Owner_Id_Fk NUMBER(10) NOT NULL,
+  Element_Desc varchar2(50) NOT NULL,
+  Agency_Master_Id Fk NUMBER(10) NOT NULL); 
+

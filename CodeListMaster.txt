@@ -1,0 +1,16 @@
+CREATE TABLE CodeListMaster (
+ Agency_Master_Id_Fk NUMBER(10) NOT NULL,
+ Cl_Code varchar2(50) NOT NULL,
+ Cl_Desc varchar2(50) NOT NULL,
+ Cl_Id int(10) PRIMARY KEY,
+ Cl_Lable varchar2(50) NOT NULL,
+ Cl_Ver int(10) NOT NULL,
+ Created_By_Fk NUMBER(10) NOT NULL,
+ Created_On NUMBER(10) NOT NULL,
+ Is_Active NUMBER(10) NOT NULL,
+ Is_Pending NUMBER(10) NOT NULL,
+ Last_Approved_By_Fk NUMBER(10),
+ Last_Approved_On NUMBER(10),
+ Last_Modified_By_Fk NUMBER(10),
+ Last_Modified_On NUMBER(10),
+ Last_Updated_On NUMBER(10) NOT NULL);

@@ -1,0 +1,13 @@
+CREATE TABLE CodeListValueMaster(
+ Cl_Id_Fk NUMBER(10) NOT NULL,
+ Cl_Value_Code varchar2(50) NOT NULL,
+ Cl_Value_Desc varchar2(50) NOT NULL,
+ Cl_Value_Lable varchar2(50) NOT NULL,
+ Cl_Values_Id NUMBER(10) PRIMARY KEY,
+ Created_By_Fk NUMBER(10) NOT NULL,
+ Created_On NUMBER(10) NOT NULL,
+ Is_Active NUMBER(10) NOT NULL,
+ Last_Modified_By_Fk NUMBER(10),
+ Last_Modified_On NUMBER(10) NOT NULL,
+ Last_Update_On NUMBER(10) NOT NULL,
+ Parent_Cl_Values_Id_Fk NUMBER(10)); 

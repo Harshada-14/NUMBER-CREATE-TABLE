@@ -1,0 +1,5 @@
+CREATE TABLE DimensionTypeMaster (
+Dimension_Type_Id NUMBER(10) PRIMARY KEY,
+Last_Updated_On NUMBER(10) NOT NULL,
+Dimension_Type_Name varchar(50) NOT NULL,
+Is_Active NUMBER(10) NOT NULL);
